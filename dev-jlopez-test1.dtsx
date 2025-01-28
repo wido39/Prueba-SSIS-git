@@ -12,8 +12,8 @@
   DTS:ObjectName="dev-jlopez-test1"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{AFC35E31-ED47-49A5-B847-FDF19D4578F5}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{7FC664F4-375B-448B-94AE-AD3333C14837}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -139,6 +139,17 @@
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D897F289-3BA3-4523-B9C5-0A2DFDC054B5}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;El archivo destino es : &quot; + @[User::VariableArchivoDestino]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable2">
+      <DTS:VariableValue
+        DTS:DataType="8">El archivo destino es : destino.txt</DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{1F375C6C-0328-4A40-AD7A-270F74ECF018}"
