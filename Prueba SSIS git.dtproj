@@ -12,11 +12,11 @@
   <DataSourceViews />
   <DeploymentModelSpecificContent>
     <Manifest>
-      <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+      <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{1d750c06-4906-4740-aa2e-474c253ee8e0}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">Prueba SSIS git</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,7 +26,6 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">JL</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYlpQImUEy0WcwSMbvj/GZgAAAAACAAAAAAAQZgAAAAEAACAAAABpL4o07f1+aszxh429Kt17ew2XGQ3sEbFm6IRyvbTS8wAAAAAOgAAAAAIAACAAAADw+ofBpdyHGrQvOZzW0LtMW3LXvDSB/LGb3XkYNyaCG5AAAADJ4/7ubryma/z4TLuSPT0MSQEoDCGl/VxYRWLkLHYwWV6I9yT1gw+IaueK03V9l9IDC7Y0Rbqf7J7jK2FvJh+PH7fz0nU8aQC/y0SMnkf73BevOAezN85sWGQoTtlHGqdAvtwe65WZ5Le8WZy0YhZEz52XOueAwwF6H24T1RYvWba1TfBxPYZFYjqFlRdlywtAAAAAxe314HU1yowBHDy5b8fuqsSoh4J+Yv9JLZBoEc9rrMp32CbnKkWnQVrDKgI+tD6fbLMcfFG9cWDkt9D1EMezBg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages />
