@@ -12,8 +12,8 @@
   DTS:ObjectName="dev-jlopez-test1"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{7DD0709E-45B1-40B8-8BEF-3F8D4DF77466}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{AFC35E31-ED47-49A5-B847-FDF19D4578F5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -138,7 +138,19 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1F375C6C-0328-4A40-AD7A-270F74ECF018}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::archivoDestino]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VariableArchivoDestino">
+      <DTS:VariableValue
+        DTS:DataType="8">destino.txt</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Tarea Flujo de datos"
