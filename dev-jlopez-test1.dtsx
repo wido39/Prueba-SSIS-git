@@ -12,8 +12,8 @@
   DTS:ObjectName="dev-jlopez-test1"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{7DD0709E-45B1-40B8-8BEF-3F8D4DF77466}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{678F4DDB-0BA1-47F2-B3B6-0AD197F8C24B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -138,7 +138,19 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D4C76088-F69D-45A1-B96C-1105E7F2F710}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR, 10) (RIGHT(&quot;0&quot; + (DT_WSTR, 2) DAY(GETDATE()), 2) + &quot;/&quot; + RIGHT(&quot;0&quot; + (DT_WSTR, 2) MONTH(GETDATE()), 2) + &quot;/&quot; + (DT_WSTR, 4) YEAR(GETDATE()))"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaActual">
+      <DTS:VariableValue
+        DTS:DataType="8">28/01/2025</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Tarea Flujo de datos"
@@ -547,7 +559,7 @@
         <NodeLayout
           Size="180,42"
           Id="Package\Tarea Flujo de datos"
-          TopLeft="176,138" />
+          TopLeft="157,108" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
