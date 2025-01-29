@@ -11,65 +11,409 @@
   <DataSources />
   <DataSourceViews />
   <DeploymentModelSpecificContent>
-    <Manifest>
-      <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
-        <SSIS:Properties>
-          <SSIS:Property SSIS:Name="ID">{1d750c06-4906-4740-aa2e-474c253ee8e0}</SSIS:Property>
-          <SSIS:Property SSIS:Name="Name">Prueba SSIS git</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionComments">
-          </SSIS:Property>
-          <SSIS:Property SSIS:Name="CreationDate">2025-01-28T10:49:33.669265-03:00</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorName">JL\USER</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorComputerName">JL</SSIS:Property>
-          <SSIS:Property SSIS:Name="Description">
-          </SSIS:Property>
-          <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
-        </SSIS:Properties>
-        <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Paquete_Jorge.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="dev-mgarcia-test1.dtsx" SSIS:EntryPoint="1" />
-        </SSIS:Packages>
-        <SSIS:ConnectionManagers />
-        <SSIS:DeploymentInfo>
-          <SSIS:ProjectConnectionParameters />
-          <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Paquete_Jorge.dtsx">
+	  <Manifest>
+		  <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+			<SSIS:Properties>
+				<SSIS:Property SSIS:Name="ID">{1d750c06-4906-4740-aa2e-474c253ee8e0}</SSIS:Property>
+				<SSIS:Property SSIS:Name="Name">Prueba SSIS git</SSIS:Property>
+				<SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
+				<SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+				<SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+				<SSIS:Property SSIS:Name="VersionComments">
+				</SSIS:Property>
+				<SSIS:Property SSIS:Name="CreationDate">2025-01-28T10:49:33.669265-03:00</SSIS:Property>
+				<SSIS:Property SSIS:Name="CreatorName">JL\USER</SSIS:Property>
+				<SSIS:Property SSIS:Name="CreatorComputerName">JL</SSIS:Property>
+				<SSIS:Property SSIS:Name="Description">
+				</SSIS:Property>
+				<SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
+			</SSIS:Properties>
+			<SSIS:Packages>
+			  <SSIS:Package SSIS:Name="dev-mgarcia-test1.dtsx" SSIS:EntryPoint="1" />
+			  <SSIS:Package SSIS:Name="dev-jlopez-test1.dtsx" SSIS:EntryPoint="1" />
+			</SSIS:Packages>
+			<SSIS:ConnectionManagers />
+			<SSIS:DeploymentInfo>
+				<SSIS:ProjectConnectionParameters />
+				<SSIS:PackageInfo>
+					<SSIS:PackageMetaData SSIS:Name="dev-mgarcia-test1.dtsx">
+					  <SSIS:Properties>
+						<SSIS:Property SSIS:Name="ID">{7953B528-AFFA-472A-A67E-0BA14E9908DF}</SSIS:Property>
+						<SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+						<SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+						<SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+						<SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
+						<SSIS:Property SSIS:Name="VersionComments">
+						</SSIS:Property>
+						<SSIS:Property SSIS:Name="VersionGUID">{B4D30E49-ECD6-48D2-B1FE-CF2B41CF76E3}</SSIS:Property>
+						<SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+						<SSIS:Property SSIS:Name="Description">
+						</SSIS:Property>
+						<SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+					  </SSIS:Properties>
+					  <SSIS:Parameters>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.AlwaysCheckForRowDelimiters">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.CodePage">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">1252</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.ColumnNamesInFirstDataRow">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.ConnectByProxy">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.ConnectionString">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">C:\SQL Server Integration Services\Test-Git\Products.txt</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.DataRowsToSkip">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.Format">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">Delimited</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.HeaderRowDelimiter">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property xml:space="preserve" SSIS:Name="Value">
+		</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.HeaderRowsToSkip">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.LocaleID">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">1033</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.RowDelimiter">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.TextQualifier">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.Products Destination Connection.Unicode">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectByProxy">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectionString">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">Data Source=PXSNTCO-06;Initial Catalog=Test;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectRetryCount">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">1</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectRetryInterval">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">5</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectUsingManagedIdentity">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.InitialCatalog">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">Test</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.Password">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.RetainSameConnection">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ServerName">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Value">PXSNTCO-06</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+						<SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.UserName">
+						  <SSIS:Properties>
+							<SSIS:Property SSIS:Name="ID">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="CreationName">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="Description">
+							</SSIS:Property>
+							<SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+							<SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+						  </SSIS:Properties>
+						</SSIS:Parameter>
+					  </SSIS:Parameters>
+					</SSIS:PackageMetaData>
+					<SSIS:PackageMetaData SSIS:Name="dev-jlopez-test1.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{058B2CC6-8FE8-4288-8192-463D1125C99D}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Paquete_Jorge</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{4BC85FA6-ABE7-44E1-9FA1-21ABC768789B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">dev-jlopez-test1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F450FA3B-A08D-4A92-B695-6C0156B5179B}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="dev-mgarcia-test1.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{7953B528-AFFA-472A-A67E-0BA14E9908DF}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B4D30E49-ECD6-48D2-B1FE-CF2B41CF76E3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AFC35E31-ED47-49A5-B847-FDF19D4578F5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.AlwaysCheckForRowDelimiters">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -84,7 +428,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.CodePage">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.CodePage">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -99,7 +443,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.ColumnNamesInFirstDataRow">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.ColumnNamesInFirstDataRow">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -114,7 +458,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -129,7 +473,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -140,11 +484,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\SQL Server Integration Services\Test-Git\Products.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Repositorios\Prueba SSIS git\Archivos\customers.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.DataRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.DataRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -159,7 +503,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.Format">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.Format">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -174,7 +518,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.HeaderRowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.HeaderRowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -190,7 +534,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.HeaderRowsToSkip">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.HeaderRowsToSkip">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -205,7 +549,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.LocaleID">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.LocaleID">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -216,11 +560,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">1033</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">3082</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.RowDelimiter">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.RowDelimiter">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -231,10 +575,12 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.TextQualifier">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.TextQualifier">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -249,7 +595,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Products Destination Connection.Unicode">
+                <SSIS:Parameter SSIS:Name="CM.Origen customer.Unicode">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -262,162 +608,15 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=PXSNTCO-06;Initial Catalog=Test;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectRetryCount">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">1</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectRetryInterval">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">5</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ConnectUsingManagedIdentity">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.InitialCatalog">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Test</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.Password">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.RetainSameConnection">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.ServerName">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">PXSNTCO-06</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.PXSNTCO-06.Test.UserName">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-          </SSIS:PackageInfo>
-        </SSIS:DeploymentInfo>
-      </SSIS:Project>
-    </Manifest>
+          
+				</SSIS:PackageInfo>
+			</SSIS:DeploymentInfo>
+		  </SSIS:Project>
+	  </Manifest>  
   </DeploymentModelSpecificContent>
   <ControlFlowParts />
   <Miscellaneous />
